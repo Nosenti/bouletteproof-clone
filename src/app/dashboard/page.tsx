@@ -9,7 +9,7 @@ export default function page() {
 
   return (
 	<div>
-	  <p>Dashboard</p>
+	  <p className='text-primary'>Dashboard</p>
 	</div>
   )
 }
