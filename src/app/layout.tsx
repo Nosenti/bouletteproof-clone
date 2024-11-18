@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from 'next/font/google';
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/Navbar";
 
 
 const poppins = Poppins({
@@ -24,12 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${poppins.className} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
+		<html lang='en'>
+			<body className={`${poppins.className} antialiased flex h-screen`}>
+				<aside className="w-1/5">
+					<Sidebar />
+				</aside>
+				<main className="px-4 py-4 w-full">
+					<Navbar />
+					{children}
+				</main>
+			</body>
+		</html>
+	);
 }

@@ -1,3 +1,5 @@
+import Button from '@/components/Button';
+import Card from '@/components/Card';
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -8,8 +10,23 @@ export const metadata: Metadata = {
 export default function page() {
 
   return (
-	<div>
-	  <p className='text-primary'>Dashboard</p>
-	</div>
-  )
+		<div className=''>
+		  <div className='flex justify-between'>
+			  <span className='flex'>
+				  <p className='font-bold'>Hey Lilian - { ' '}</p>
+				  {' '}
+				 <span className='text-muted-foreground'> here's what's happening today</span> 
+			  </span>
+			  <span className='flex gap-3'>
+				  <Button variant='outline'>Add Website</Button>
+				  <Button variant='primary'>Add Campaign</Button>
+			  </span>
+			</div>
+			<span className='grid grid-cols-3 w-full gap-3'>
+				<Card title='number of leads' value={2048} percentageChange={-0.01} />
+				<Card title='number of campaigns' value={123} percentageChange={0.01} />
+				<Card title='number of websites' value={12} percentageChange={0.01} />
+			</span>
+		</div>
+	);
 }
