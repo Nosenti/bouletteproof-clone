@@ -28,12 +28,12 @@ export default function RootLayout({
   return (
 		<html lang='en'>
 			<body className={`${poppins.className} antialiased flex h-screen`}>
-				<aside className="w-1/5">
+				<aside className='w-1/4 h-full'>
 					<Sidebar />
 				</aside>
-				<main className="px-4 py-4 w-full">
+				<main className='w-full'>
 					<Navbar />
-					{children}
+					<div className='px-6'>{children}</div>
 				</main>
 			</body>
 		</html>

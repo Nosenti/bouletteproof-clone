@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { ArrowUp, ArrowDown } from 'lucide-react';
 
+
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 	title: string;
 	value: number;
@@ -30,7 +31,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
 			>
 				<h2
 					className={clsx(
-						'text-sm font-bold mb-2 uppercase text-muted-foreground'
+						'text-sm font-medium mb-4 uppercase text-muted-foreground'
 					)}
 				>
 					{title}

@@ -15,7 +15,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const baseButtonClasses =
-	'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';
+	'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none  disabled:opacity-50 disabled:pointer-events-none';
 
 const variantClasses: { [key: string]: string } = {
 	default: 'bg-gray-800 text-white hover:bg-gray-700',
@@ -24,7 +24,7 @@ const variantClasses: { [key: string]: string } = {
 	destructive: 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
 	outline:
 		'border border-primary text-primary hover:bg-primary/10',
-	ghost: 'bg-transparent hover:bg-gray-100 text-gray-800 focus:ring-gray-400',
+	ghost: 'bg-transparent hover:bg-accent text-white focus:bg-accent',
 	link: 'text-primary hover:underline focus:ring-primary/70'
 };
 

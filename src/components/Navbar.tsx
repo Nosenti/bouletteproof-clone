@@ -5,7 +5,7 @@ import Avatar from '@/images/avatar-user.jpeg'
 
 export default function Navbar() {
   return (
-	<div className='flex justify-between'>
+	<div className='flex justify-between bg-white'>
 		  <span>
 			  <Input/>
 		  </span>
