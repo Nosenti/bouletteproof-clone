@@ -2,33 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import leadsData from '@/lib/data/data.json';
 
 export default function Leads() {
-
-	const data = [
-		{
-		avatar: '/images/Jenny Wilson.png',
-		name: 'Jenny Wilson',
-		email:'w.lawson@example.com',
-		},
-		{
-		avatar: '/images/Devon Lane.png',
-		name: 'Devon Lane',
-		email:'dat.roberts@example.com',
-		},
-		{
-		avatar: '/images/Jane Cooper.png',
-		name: 'Jane Cooper',
-		email:'jgraham@example.com',
-		},
-		{
-		avatar: '/images/Dianne Russel.png',
-		name: 'Diane Russel',
-		email:'curtis.d@example.com',
-		}
-
-	]
-  return (
+	const data = leadsData.leads;
+	return (
 		<div className='shadow-lg rounded-lg border border-gray-200 p-6 flex flex-col mt-6 bg-white gap-6 h-[450px]'>
 			<p className='font-bold text-lg'>Recent Leads</p>
 			<span className=''>

@@ -1,9 +1,12 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 import Logo from '@/images/JPG_1_.svg';
 import Button from './Button';
 import { LayoutGrid, Megaphone, Globe, Users, Settings, Headphones, LogOut, TrendingDown } from 'lucide-react';
 import ExpandableSection from './ExpandableSection';
+import { twMerge } from 'tailwind-merge';
+import { usePathname } from 'next/navigation';
 
 type NavItemType = {
   path: string;
@@ -46,6 +49,7 @@ export default function Sidebar() {
 			icon: <LogOut className=''/>
 		}
 	];
+	const pathname = usePathname();
   return (
 		<div className='bg-card h-full p-4 sticky top-0'>
 			<span className='mt-8'>
@@ -57,19 +61,22 @@ export default function Sidebar() {
 					{navItems.map((item, index) => (
 						<Button
 							variant='ghost'
-							className='hover:text-primary flex justify-start items-center focus:text-primary'
+							className={twMerge(
+								'hover:text-primary flex justify-start items-center focus:text-primary',
+								pathname === item.path && 'text-primary bg-accent'
+							)}
 							key={index}
 						>
 							<span className='mr-2'>{item.icon}</span>
 							<span className='text-base'>{item.name}</span>
 						</Button>
 					))}
-				  <ExpandableSection icon={ <Globe/>} title='Website Analysis'>
+					<ExpandableSection icon={<Globe />} title='Website Analysis'>
 						<Button
 							variant='ghost'
 							className='hover:text-primary flex justify-start items-center focus:text-primary'
 						>
-							<span className='mr-2'>{<TrendingDown/>}</span>
+							<span className='mr-2'>{<TrendingDown />}</span>
 							<span className='text-base'>Churn Analysis</span>
 						</Button>
 					</ExpandableSection>

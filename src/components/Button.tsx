@@ -1,6 +1,5 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
-import { usePathname } from 'next/navigation';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?:
@@ -25,7 +24,7 @@ const variantClasses: { [key: string]: string } = {
 	destructive: 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
 	outline:
 		'border border-primary text-primary hover:bg-primary/10',
-	ghost: 'bg-transparent hover:bg-accent text-white focus:bg-accent',
+	ghost: 'bg-transparent hover:bg-accent text-white',
 	link: 'text-primary hover:underline focus:ring-primary/70'
 };
 
@@ -47,7 +46,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 			sizeClasses[size],
 			className
 		);
-		const pathname = usePathname();
+		
 		
 
 		return (

@@ -9,69 +9,9 @@ import {
 	Tooltip,
 	ResponsiveContainer
 } from 'recharts';
+import analyticsData from '@/lib/data/data.json';
 
-const data = [
-	{
-		name: 'Feb',
-		leads: 100,
-		campaigns: 50
-	},
-	{
-		name: 'Mar',
-		leads: 150,
-		campaigns: 80
-	},
-	{
-		name: 'Apr',
-		leads: 130,
-		campaigns: 90
-	},
-	{
-		name: 'May',
-		leads: 180,
-		campaigns: 120
-	},
-	{
-		name: 'Jun',
-		leads: 160,
-		campaigns: 110
-	},
-	{
-		name: 'Jul',
-		leads: 210,
-		campaigns: 140
-	},
-	{
-		name: 'Aug',
-		leads: 190,
-		campaigns: 130
-	},
-	{
-		name: 'Sep',
-		leads: 240,
-		campaigns: 160
-	},
-	{
-		name: 'Oct',
-		leads: 220,
-		campaigns: 150
-	},
-	{
-		name: 'Nov',
-		leads: 270,
-		campaigns: 180
-	},
-	{
-		name: 'Dec',
-		leads: 250,
-		campaigns: 170
-	},
-	{
-		name: 'Jan',
-		leads: 300,
-		campaigns: 200
-	}
-];
+const data = analyticsData.analytics;
 
 export default function Analytics() {
 	return (
@@ -152,7 +92,7 @@ export default function Analytics() {
 							stackId='1'
 							stroke='#00D084'
 							strokeWidth={2}
-							fill='#a9e6eb'
+							fill='#d1f5f8'
 						/>
 						<Area
 							type='monotone'
@@ -160,7 +100,7 @@ export default function Analytics() {
 							stackId='1'
 							stroke='#07BDCB'
 							strokeWidth={2}
-							fill='#a9e6eb'
+							fill='#d1f5f8'
 						/>
 					</AreaChart>
 				</ResponsiveContainer>

@@ -1,0 +1,148 @@
+{
+	"campaigns": [
+		{
+			"name": "Campaign 1",
+			"platform": "Facebook",
+			"createDate": "2023-01-01",
+			"leads": 100
+		},
+		{
+			"name": "Campaign 2",
+			"platform": "Google",
+			"createDate": "2023-01-02",
+			"leads": 150
+		},
+		{
+			"name": "Campaign 3",
+			"platform": "Instagram",
+			"createDate": "2023-01-03",
+			"leads": 200
+		},
+		{
+			"name": "Campaign 4",
+			"platform": "LinkedIn",
+			"createDate": "2023-01-04",
+			"leads": 250
+		},
+		{
+			"name": "Campaign 5",
+			"platform": "Twitter",
+			"createDate": "2023-01-05",
+			"leads": 300
+		},
+		{
+			"name": "Campaign 6",
+			"platform": "Snapchat",
+			"createDate": "2023-01-06",
+			"leads": 350
+		},
+		{
+			"name": "Campaign 7",
+			"platform": "Pinterest",
+			"createDate": "2023-01-07",
+			"leads": 400
+		},
+		{
+			"name": "Campaign 8",
+			"platform": "TikTok",
+			"createDate": "2023-01-08",
+			"leads": 450
+		},
+		{
+			"name": "Campaign 9",
+			"platform": "YouTube",
+			"createDate": "2023-01-09",
+			"leads": 500
+		},
+		{
+			"name": "Campaign 10",
+			"platform": "Reddit",
+			"createDate": "2023-01-10",
+			"leads": 550
+		}
+	],
+	"analytics": [
+		{
+			"name": "Feb",
+			"leads": 100,
+			"campaigns": 50
+		},
+		{
+			"name": "Mar",
+			"leads": 150,
+			"campaigns": 80
+		},
+		{
+			"name": "Apr",
+			"leads": 130,
+			"campaigns": 90
+		},
+		{
+			"name": "May",
+			"leads": 180,
+			"campaigns": 120
+		},
+		{
+			"name": "Jun",
+			"leads": 160,
+			"campaigns": 110
+		},
+		{
+			"name": "Jul",
+			"leads": 210,
+			"campaigns": 140
+		},
+		{
+			"name": "Aug",
+			"leads": 190,
+			"campaigns": 130
+		},
+		{
+			"name": "Sep",
+			"leads": 240,
+			"campaigns": 160
+		},
+		{
+			"name": "Oct",
+			"leads": 220,
+			"campaigns": 150
+		},
+		{
+			"name": "Nov",
+			"leads": 270,
+			"campaigns": 180
+		},
+		{
+			"name": "Dec",
+			"leads": 250,
+			"campaigns": 170
+		},
+		{
+			"name": "Jan",
+			"leads": 300,
+			"campaigns": 200
+		}
+	],
+	"leads": [
+		{
+			"avatar": "/images/Jenny Wilson.png",
+			"name": "Jenny Wilson",
+			"email": "w.lawson@example.com"
+		},
+		{
+			"avatar": "/images/Devon Lane.png",
+			"name": "Devon Lane",
+			"email": "dat.roberts@example.com"
+		},
+		{
+			"avatar": "/images/Jane Cooper.png",
+			"name": "Jane Cooper",
+			"email": "jgraham@example.com"
+		},
+		{
+			"avatar": "/images/Dianne Russel.png",
+			"name": "Diane Russel",
+			"email": "curtis.d@example.com"
+		}
+	]
+}

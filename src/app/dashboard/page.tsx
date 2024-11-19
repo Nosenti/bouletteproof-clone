@@ -15,7 +15,7 @@ export default function page() {
 		<div className=''>
 			<div className='flex justify-between my-6'>
 				<span className='flex'>
-					<p className='font-bold'>Hey Lilian - { ' '}</p>
+					<p className='font-bold'>Hey Lilian - </p>
 					<span className='text-muted-foreground'>
 						here's what's happening today
 					</span>
@@ -25,14 +25,12 @@ export default function page() {
 					<Button variant='primary'>Add Campaign</Button>
 				</span>
 			</div>
-			<span className='grid grid-cols-3 w-full gap-3'>
+			<span className='grid grid-cols-3 w-full gap-4'>
 				<Card title='number of leads' value={2048} percentageChange={-0.01} />
 				<Card title='number of campaigns' value={123} percentageChange={0.01} />
 				<Card title='number of websites' value={12} percentageChange={0.01} />
 			</span>
-
-				<Analytics />
-			
+			<Analytics />
 			<span className='flex flex-col md:flex-row gap-6 mb-4 '>
 				<span className='w-[65%]'>
 					<Campaigns />
