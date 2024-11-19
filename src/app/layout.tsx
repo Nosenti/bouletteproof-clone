@@ -32,7 +32,6 @@ export default function RootLayout({
 				</aside>
 				<main className='w-full flex flex-col h-full overflow-y-auto'>
 					<Navbar />
-
 					<div className='flex-1 px-6'>{children}</div>
 				</main>
 			</body>

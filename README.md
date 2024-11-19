@@ -6,6 +6,8 @@ A dashboard clone of Bouletteproof's application, built with Next.js and Tailwin
 
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
+**Side Note:** For quick access, you can check it out [hosted here](https://bouletteproof-clone.vercel.app/dashboard)
+
 ### Prerequisites
 
 - **Node.js**: Version 14 or above is recommended.
@@ -48,3 +50,11 @@ This will start the application in development mode at `http://localhost:3000`.
 - **React Table**: Extend the table's functionalities.
 - **Lucide Icons**: Icon library for React applications.
 - **ESLint & Prettier**: Code linting and formatting tools.
+
+## Areas of Improvement
+
+While the web page looks as expected, below are the improvements in terms of code refactoring where necessary to adhere to DRY principles and improve user experience:
+
+- **Responsiveness:** The current state of UI is only tailored for laptops and it could be improved to be responsive to smaller screens like a tablet and phone. 
+- **Dark Mode:** For better user experience, dark mode could be implemented to match the users' preferences. 
+- **Improving code re-usability:** Some components could be broken down even into smaller components
