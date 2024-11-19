@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Bouletteproof Dashboard Clone
+
+A dashboard clone of Bouletteproof's application, built with Next.js and Tailwind CSS. The application provides detailed analytics and insights on website visits, leads and campaigns.
 
 ## Getting Started
 
-First, run the development server:
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-```bash
+### Prerequisites
+
+- **Node.js**: Version 14 or above is recommended.
+- **npm**: Comes with Node.js. Alternatively, you can use **yarn**.
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```
+    git clone https://github.com/Nosenti/bouletteproof-clone.git
+   cd bouletteproof-clone
+   ```
+
+2. **Install Dependencies**
+
+   Using npm:
+
+   ```
+   npm install
+   ```
+
+### Running the Application
+
+**Development Mode**
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will start the application in development mode at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js**: React framework for server-rendered applications.
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Typed superset of JavaScript for type safety.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Recharts**: Charting library built on React components.
+- **React Table**: Extend the table's functionalities.
+- **Lucide Icons**: Icon library for React applications.
+- **ESLint & Prettier**: Code linting and formatting tools.
