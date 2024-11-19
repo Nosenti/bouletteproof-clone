@@ -15,9 +15,8 @@ export default function page() {
 		<div className=''>
 			<div className='flex justify-between my-6'>
 				<span className='flex'>
-					<p className='font-bold'>Hey Lilian - </p>{' '}
+					<p className='font-bold'>Hey Lilian - { ' '}</p>
 					<span className='text-muted-foreground'>
-						{' '}
 						here's what's happening today
 					</span>
 				</span>
@@ -34,12 +33,12 @@ export default function page() {
 
 				<Analytics />
 			
-			<span className='flex flex-col md:flex-row gap-6'>
-				<span className='w-3/5'>
-					<Campaigns/>
+			<span className='flex flex-col md:flex-row gap-6 mb-4 '>
+				<span className='w-[65%]'>
+					<Campaigns />
 				</span>
-				<span className='w-2/5'>
-					<Leads/>
+				<span className='w-[32%]'>
+					<Leads />
 				</span>
 			</span>
 		</div>

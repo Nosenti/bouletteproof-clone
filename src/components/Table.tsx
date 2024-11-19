@@ -10,7 +10,7 @@ export const Table = React.forwardRef<
 	React.HTMLAttributes<HTMLTableElement>
 >(({ className, children, ...props }, ref) => {
 	return (
-		<div className='relative w-full overflow-auto'>
+		<div className='relative w-full overflow-auto rounded-lg border border-gray-200'>
 			<table
 				ref={ref}
 				className={clsx('w-full text-sm caption-bottom', className)}
@@ -92,7 +92,7 @@ export const TableHead = React.forwardRef<
 		<th
 			ref={ref}
 			className={clsx(
-				'px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider',
+				'px-4 py-2 text-left text-xs font-medium text-gray-500 tracking-wider border-b border-gray-200',
 				className
 			)}
 			{...props}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
+import { usePathname } from 'next/navigation';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?:
@@ -46,6 +47,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 			sizeClasses[size],
 			className
 		);
+		const pathname = usePathname();
+		
 
 		return (
 			<button className={classes} ref={ref} {...props}>
